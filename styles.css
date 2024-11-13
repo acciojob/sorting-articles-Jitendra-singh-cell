@@ -13,6 +13,7 @@ body{
 	 list-style:circle;
         }
         li {
-            margin: 20px 0;
+            padding: 20px 0;
 			font-size:18px;
+			border-bottom: 1px solid #000;
         }

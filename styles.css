@@ -10,10 +10,11 @@ body{
 	 width:50%;
 	 margin: 0 auto;
 	 padding-left:30px;
-	 list-style:circle;
+	 
         }
         li {
             padding: 20px 0;
 			font-size:18px;
 			border-bottom: 1px solid #000;
+			list-style:square;
         }

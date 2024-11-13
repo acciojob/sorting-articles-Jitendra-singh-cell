@@ -7,6 +7,48 @@
 </head>
 
 <body>
+    
+    <ul id="band"></ul>
+
+    <script>
+        const bands = [
+            'The Plot in You', 
+            'The Devil Wears Prada', 
+            'Pierce the Veil', 
+            'Norma Jean', 
+            'The Bled', 
+            'Say Anything', 
+            'The Midway State', 
+            'We Came as Romans', 
+            'Counterparts', 
+            'Oh, Sleeper', 
+            'A Skylit Drive', 
+            'Anywhere But Here', 
+            'An Old Dog'
+        ];
+
+        // Function to process and remove "a", "an", "the" from the start of the band names
+        function stripArticle(bandName) {
+            return bandName.replace(/^(a|an|the)\s+/i, '').toLowerCase();
+        }
+
+        // Sort the bands by stripping articles and ignoring case
+        const sortedBands = bands.sort((bandA, bandB) => {
+            const nameA = stripArticle(bandA);
+            const nameB = stripArticle(bandB);
+            return nameA.localeCompare(nameB);
+        });
+
+        // Get the UL element
+        const bandList = document.getElementById('band');
+
+        // Add each band to the list
+        sortedBands.forEach(band => {
+            const li = document.createElement('li');
+            li.textContent = band;
+            bandList.appendChild(li);
+        });
+    </script>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>

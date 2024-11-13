@@ -1,1 +1,18 @@
 /*  your css code here. If applicable */
+body{
+	background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXxfn1j1vKFy8yJeBGl2AS6Dcah-lKgHofg&s);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+ ul#band {
+        padding: 0;
+	 background:#fff;
+	 width:50%;
+	 margin: 0 auto;
+	 padding-left:30px;
+	 list-style:circle;
+        }
+        li {
+            margin: 20px 0;
+			font-size:18px;
+        }
